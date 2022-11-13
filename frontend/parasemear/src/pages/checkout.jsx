@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Login() {
+export default function Checkout() {
     return (
 
         <div class="col-1 d-flex align-items-end pb-2">
