@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navegacao/navbar";
-import Login from"login";
+import Logar from"./logar";
 
 export default function Header(){
     return(
@@ -9,7 +9,7 @@ export default function Header(){
             <div class="row">
                
                 <Navbar/>
-                <Login/>
+                <Logar/>
                
             </div>
         </div>

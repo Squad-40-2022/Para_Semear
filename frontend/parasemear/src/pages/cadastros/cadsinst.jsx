@@ -7,7 +7,7 @@ export default function cadsinst() {
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="../IMG/Icon-login.png" alt="" />
             </button>
-            <form className="Cadastro">
+            <form className="Cadastro" action="./inst-save">
                 <h2>Cadastro da Instituição </h2>
                 <div className="dados mb-3">
                     <label for="name">Nome Completo</label>

@@ -1,8 +1,16 @@
 import React from 'react'
+import Header from '../components/estrutura/header'
+import Footer from '../components/estrutura/footer'
 
+<<<<<<< Updated upstream:frontend/parasemear/src/pages/instituiçoes.jsx
 export default function institucoes() {
+=======
+export default function Instituicoes() {
+>>>>>>> Stashed changes:frontend/parasemear/src/pages/instituicoes.jsx
     return (
-
+<>
+<h1>ola</h1>
+<Header/>
         <div class="col-1 d-flex align-items-end pb-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="../IMG/Icon-login.png" alt="" />
@@ -15,8 +23,8 @@ export default function institucoes() {
                   <div class="card">
                     <div class="card-body">
                       <div class="img1"><img src="../IMG/92471.png" class="card-img-top" alt=""></img>
-                        <div class="img2"><a href="instituicao1.jsx"></a>
-                          <img src="../IMG/imagens.colaboradores/ACEMT LOGO.png" alt=""></img>
+                        <div class="img2">
+                          <img src="" alt=""/>
                           <div class="main-text">
                             <h2>ACEMT</h2>
                             <p>A ACEMT é uma associação sem fins lucrativos
@@ -38,7 +46,7 @@ export default function institucoes() {
                   <div class="card">
                     <div class="card-body">
                       <div class="img1"><img src="../IMG/92471.png" class="card-img-top" alt=""></img>
-                        <div class="img2"><a href="instituicao1.html"></a>
+                        <div class="img2">
                           <img src="../IMG/imagens.colaboradores/ACEMT LOGO.png" alt=""></img>
                           <div class="main-text">
                             <h2>ONG2</h2>
@@ -61,7 +69,7 @@ export default function institucoes() {
                   <div class="card">
                     <div class="card-body">
                       <div class="img1"><img src="#" class="card-img-top" alt=""></img>
-                        <div class="img2"><a href="instituicao1.html"></a>
+                        <div class="img2">
                           <img src="../IMG/imagens.colaboradores/ACEMT LOGO.png" alt=""></img>
                           <div class="main-text">
                             <h2>ONG3</h2>
@@ -80,7 +88,8 @@ export default function institucoes() {
           </form>
         </div>
         </div>
-
+        <Footer/>
+</>
     )
 
 }
