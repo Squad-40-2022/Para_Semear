@@ -1,4 +1,5 @@
 import React from 'react'
+import"../../CSS/index.css"
 
 export default function Logar() {
     return (
@@ -13,8 +14,8 @@ export default function Logar() {
                     <div class="modal-dialog">
                         <div class="modal-content p-4">
                             <h3 class="mb-4">Olá! Você é?</h3>
-                            <button class="btn bt-log mb-4"><a href="../html/login_c.html" class="tx">Colaborador</a></button>
-                            <button class="btn bt-log mb-4"><a href="../HTML/log_inst.html" class="tx">Instituição</a></button>
+                            <button class="btn bt-log mb-4"><a href="./logcol" class="tx">Colaborador</a></button>
+                            <button class="btn bt-log mb-4"><a href="./logininst" class="tx">Instituição</a></button>
                         </div>
                     </div>
                 </div>

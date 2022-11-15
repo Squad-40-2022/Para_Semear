@@ -1,17 +1,19 @@
 import React from "react"
-import Navbar from "../components/navegacao/navbar"
+
 import Footer from "../components/estrutura/footer"
 import Doador from "../IMG/doador.png"
 import Voluntario from "../IMG/voluntario.png"
 import Instituicao from "../IMG/instituicao.png"
 import Logof from "../IMG/logo/logo-fundo.png"
 import Imgfundo from "../IMG/logo/logo-esq.png"
+import"../CSS/index.css"
+import Header from "../components/estrutura/header"
 
 
 export default function Home() {
     return (
         <>
-            <Navbar />
+            <Header></Header>
 
             <div>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -66,7 +68,7 @@ export default function Home() {
             </div>
             <div class="bloco02 p-5">
                 <div class="d-flex justify-content-center align-items-center bloco02">
-                    <img src={Logof} alt="" class="img-fundo" />
+                    <img src={Logof} alt="" className="img-fundo" />
                     <div class="texto-slide px-5 py-4 tx-pg">
                         <h1 class="mx-5"><big>Quem somos ...</big></h1>
                         <h5 class="mx-5">Somos um grupo que acreditamos que todos tem o direito de se comunicar e participar da
