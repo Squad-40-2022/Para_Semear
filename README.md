@@ -64,7 +64,7 @@ As atividades foram distribuidas de acordo com tempo disponivel, de cada membro 
 ## Tecnologias utilizadas
 - `Java Script`
 - `Java`
-- `React Native`
+- `React JS`
 - `HTML & CSS`
 
 ## Autores
