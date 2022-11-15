@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Dados() {
     return (
-        <div class="col-1 d-flex align-items-end pb-2">
+        <div class="col-1 pb-2">
             <form className="Dados">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel001" aria-hidden="true">
