@@ -1,7 +1,5 @@
 
 import React from "react"
-
-import Footer from "../components/estrutura/footer"
 import Doador from "../IMG/doador.png"
 import Voluntario from "../IMG/voluntario.png"
 import Instituicao from "../IMG/instituicao.png"
@@ -14,8 +12,7 @@ import Header from "../components/estrutura/header"
 export default function Home() {
     return (
         <>
-            <Header></Header>
-
+        <Header/>
             <div>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-indicators">
@@ -88,7 +85,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
