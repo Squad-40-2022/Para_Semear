@@ -3,7 +3,7 @@ import LogoLogin from "../../IMG/Icon-login.png"
 import Logo from "../../IMG/logo/logo-100px.png"
 import "../../CSS/index.css"
 
-function Header(){
+export default function Header(){
     return(
         <header>
     <div class="container">
@@ -47,5 +47,6 @@ function Header(){
     </div>
   </header>
     )
-}
-export default Header;
+};
+
+

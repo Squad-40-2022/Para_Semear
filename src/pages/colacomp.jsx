@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/estrutura/header';
 import user from '../IMG/user.png';
 import user30 from '../IMG/user-30px.png';
+import Footer from '../components/estrutura/footer';
 
 export default function ColAcom() {
     return (
@@ -198,6 +199,8 @@ export default function ColAcom() {
                     </div>
                 </div>
             </div>
-        </div></>
+        </div>
+        <Footer/>
+        </>
     )
 }

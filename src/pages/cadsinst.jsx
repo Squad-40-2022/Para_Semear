@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/estrutura/footer'
 import Header from '../components/estrutura/header'
 
 export default function cadsinst() {
@@ -76,6 +77,7 @@ export default function cadsinst() {
                 </div>
             </form>
         </div>
+        <Footer/>
 </>
     )
 

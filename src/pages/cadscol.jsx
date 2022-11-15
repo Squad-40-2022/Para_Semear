@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/estrutura/footer'
 
 import Header from '../components/estrutura/header'
 
@@ -75,6 +76,7 @@ export default function cadscol() {
                 </div>
             </form>
         </div>
+        <Footer/>
 </>
     )
 

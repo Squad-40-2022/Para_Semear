@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from '../components/estrutura/header'
+import Footer from '../components/estrutura/footer'
+import '../CSS/Ajud.css'
+
 
 export default function Ajuda() {
     return (
@@ -38,6 +41,7 @@ export default function Ajuda() {
             </div>
           </form>
         </div>
+      <Footer/> 
 </>
     )
 

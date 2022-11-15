@@ -7,6 +7,7 @@ import Logof from "../IMG/logo/logo-fundo.png"
 import Imgfundo from "../IMG/logo/logo-esq.png"
 import"../CSS/index.css"
 import Header from "../components/estrutura/header"
+import Footer from "../components/estrutura/footer"
 
 
 export default function Home() {
@@ -69,7 +70,7 @@ export default function Home() {
                     <img src={Logof} alt="" className="img-fundo" />
                     <div class="texto-slide px-5 py-4 tx-pg">
                         <h1 class="mx-5"><big>Quem somos ...</big></h1>
-                        <h5 class="mx-5">Somos um grupo que acreditamos que todos tem o direito de se comunicar e participar da
+                        <h5 class="mx-5">Somos um grupo que acredita que todos tem o direito de se comunicar e participar da
                             sociedade e a escrita
                             é um dos maiores meios de comunicação, portanto ter acesso a leitura abre as portas para se comunicar com o
                             mundo. </h5>
@@ -85,6 +86,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Footer/>          
         </>
     )
 }

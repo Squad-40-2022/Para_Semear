@@ -4,6 +4,7 @@ import user from "../IMG/user.png";
 import social from '../IMG/imagens/social.png';
 import webp from '../IMG/imagens/transformar.webp';
 import sem from '../IMG/imagens/semente de esperança.jpg';
+import Footer from '../components/estrutura/footer';
 
 export default function ColInst() {
     return (
@@ -148,6 +149,7 @@ export default function ColInst() {
 
             </div>
         </div>
+        <Footer/>
 </>
     )
 

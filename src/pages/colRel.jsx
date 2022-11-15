@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/estrutura/header';
 import user from '../IMG/user.png';
 import dow from '../IMG/imagens.colaboradores/pdf-download-2617 (1).png';
+import Footer from '../components/estrutura/footer';
 
 export default function ColRel() {
     return (
@@ -127,6 +128,7 @@ export default function ColRel() {
             </div>
 
         </div>
+        <Footer/>
 </>
     )
 

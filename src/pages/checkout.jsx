@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/estrutura/footer'
 import Header from '../components/estrutura/header'
 
 export default function Checkout() {
@@ -70,6 +71,7 @@ export default function Checkout() {
           </form>
         </div>
         </div>
+        <Footer/>
 </>
     )
 

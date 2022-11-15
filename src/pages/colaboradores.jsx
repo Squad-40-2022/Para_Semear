@@ -3,6 +3,8 @@ import Header from '../components/estrutura/header';
 import dinheiro from '../IMG/imagens.colaboradores/dinheiro.png';
 import celular from '../IMG/imagens.colaboradores/celular.png.png'
 import livros from '../IMG/imagens.colaboradores/livros.png';
+import Footer from '../components/estrutura/footer';
+import "../CSS/colaboradores.css"
 
 export default function Col() {
     return (
@@ -106,6 +108,7 @@ export default function Col() {
             </form>
 
         </div>
+        <Footer/>
 </>
     )
 
