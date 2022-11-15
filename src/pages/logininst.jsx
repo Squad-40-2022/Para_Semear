@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../components/navegacao/navbar'
+import Header from '../components/estrutura/header'
 
 export default function Logininst() {
     return (
         <>
-<Navbar/>
+<Header/>
         <div class="col-1 d-flex align-items-end pb-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="../IMG/Icon-login.png" alt="" />

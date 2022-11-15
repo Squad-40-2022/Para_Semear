@@ -3,9 +3,12 @@ import social from '../IMG/imagens/social.png';
 import trans from '../IMG/imagens/transformar.webp';
 import sem from '../IMG/imagens/semente de esperança.jpg';
 import manha from '../IMG/imagens/educadoamanha.png';
+import Header from '../components/estrutura/header';
 
 export default function InstCol() {
     return (
+        <>
+<Header/>
         <div class="col-1 d-flex pb-2">
         <div className="MinhInst">
             <form>
@@ -65,7 +68,7 @@ export default function InstCol() {
             </form>
         </div>
         </div>
-
+</>
     )
 
 }

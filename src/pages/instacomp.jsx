@@ -1,10 +1,12 @@
 import React from 'react'
 import pdf from '../IMG/imagens.colaboradores/pdf-download-2617 (1).png';
 import user from '../IMG/user.png';
+import Header from '../components/estrutura/header';
 
 export default function instacom() {
     return (
-
+<>
+<Header/>
         <div class="col-1 d-flex pb-2">
             <form className="instac">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -360,7 +362,7 @@ export default function instacom() {
                 </div>
             </form>
         </div>
-
+</>
     )
 
 }

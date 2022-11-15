@@ -1,8 +1,11 @@
 import React from 'react'
 import user from '../IMG/user.png';
+import Header from '../components/estrutura/header';
 
 export default function Doa() {
     return (
+      <>
+<Header/>
       <div class="col-1 d-flex pb-2">
           <form className="doa">
             <div className="doacao">
@@ -103,5 +106,6 @@ export default function Doa() {
             </div>
           </form>
           </div>
+          </>
     )
 }

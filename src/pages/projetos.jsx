@@ -1,8 +1,11 @@
 import React from 'react'
 import pdf from '../IMG/imagens.colaboradores/pdf-download-2617 (1).png';
+import Header from '../components/estrutura/header';
 
 export default function Projetos() {
     return (
+        <>
+<Header/>
         <div class="col-1 d-flex pb-2">
             <form className="projet">
                 <div className='pro'>
@@ -373,7 +376,7 @@ export default function Projetos() {
             </form>
 
         </div>
-
+</>
     )
 
 }
