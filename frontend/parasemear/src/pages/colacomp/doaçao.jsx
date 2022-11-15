@@ -3,6 +3,7 @@ import user from '../IMG/user.png';
 
 export default function Doa() {
     return (
+      <div class="col-1 d-flex pb-2">
           <form className="doa">
             <div className="doacao">
               <main class="container conteudo my-4 p-4">
@@ -101,5 +102,6 @@ export default function Doa() {
               </div>
             </div>
           </form>
+          </div>
     )
 }
