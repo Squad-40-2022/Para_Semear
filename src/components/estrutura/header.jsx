@@ -9,7 +9,7 @@ function Header(){
     <div class="container">
       <div class="row">
         <nav class="navbar navbar-expand-md navbar-light col-10 d-flex align-items-end">
-          <a class="navbar-brand" href="index.html"><img src={Logo} alt=""/></a>
+          <a class="navbar-brand" href="./"><img src={Logo} alt=""/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

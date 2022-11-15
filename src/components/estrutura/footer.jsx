@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../CSS/index.css"
 
-export default function Footer() {
+function Footer() {
     return (
         <footer>
             <div class="nav justify-content-between container">
@@ -33,3 +33,4 @@ export default function Footer() {
         </footer>
     )
 }
+export default Footer;
