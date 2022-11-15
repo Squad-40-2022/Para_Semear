@@ -61,11 +61,16 @@ As atividades foram distribuidas de acordo com tempo disponivel, de cada membro 
 - `Word & Excel` Para organização de cronograma
 - `Figma` Para escopo de wireframe
 
-## Tecnologias utilizadas
+## Linguagem de programação
 - `Java Script`
-- `Java`
-- `React JS`
+- `Java  v.9`
+## Marcação
 - `HTML5 & CSS3`
+
+##frameworks/bibliotecas
+- `React JS`
+- `Spring versão 16`
+
 
 ## Autores
 Squad nº 40 
