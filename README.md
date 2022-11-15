@@ -65,7 +65,7 @@ As atividades foram distribuidas de acordo com tempo disponivel, de cada membro 
 - `Java Script`
 - `Java`
 - `React JS`
-- `HTML & CSS`
+- `HTML5 & CSS3`
 
 ## Autores
 Squad nº 40 
