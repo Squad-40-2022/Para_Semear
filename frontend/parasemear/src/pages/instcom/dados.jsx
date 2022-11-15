@@ -2,11 +2,7 @@ import React from 'react'
 
 export default function Dados() {
     return (
-
         <div class="col-1 d-flex align-items-end pb-2">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
-            </button>
             <form className="Dados">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel001" aria-hidden="true">
