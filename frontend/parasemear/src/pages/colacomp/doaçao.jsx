@@ -5,8 +5,6 @@ export default function Doa() {
     return (
           <form className="doa">
             <div className="doacao">
-          <form>
-            <div>
               <main class="container conteudo my-4 p-4">
                 <div class="border-bottom">
                 <div class="front">
@@ -103,8 +101,5 @@ export default function Doa() {
               </div>
             </div>
           </form>
-        </div>
-          </form>
     )
-
 }
