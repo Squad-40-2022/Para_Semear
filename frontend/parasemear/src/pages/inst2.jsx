@@ -5,10 +5,7 @@ import ACEMT from '../IMG/imagens.colaboradores/ACEMT.png';
 export default function inst2() {
     return (
 
-        <div class="col-1 d-flex align-items-end pb-2">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
-            </button>
+        <div class="col-1 d-flex pb-2">
             <form className="inst2">
                 <div class="container">
                     <div class="row m-0 p-0">

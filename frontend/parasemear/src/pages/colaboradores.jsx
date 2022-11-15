@@ -7,7 +7,6 @@ export default function Col() {
     return (
 
         <div class="col-1 d-flex pb-2">
-
             <form className="Colab">
                 <div class="fw-bold">
                     <h1 className="h1"> Boa semente, só pode dar bom fruto! </h1>
