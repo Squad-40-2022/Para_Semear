@@ -4,80 +4,181 @@ import Footer from '../components/estrutura/footer'
 import Header from '../components/estrutura/header'
 
 export default function cadscol() {
+    function abrirModal() {
+        const modal = document.getElementById("modal-termo")
+        modal.classList.add("mostrar")
+
+        modal.addEventListener("click", (e) => {
+            if (e.target.id == "modal-termo" || e.target.className == "fechar") {
+                modal.classList.remove("mostrar");
+            }
+        });
+    }
+    function Entrou() {
+        var x = document.getElementsByClassName("entre");
+        x[0].innerHTML = "Bem Vindo de Volta!"
+    }
     return (
 <>
-<Header/>
-        <div class="container">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          
-            </button>
-            <form className="CadCol">
-                <h2>Cadastro do Colaborador </h2>
-                <div className="dados mb-3">
-                    <label for="name">Nome Completo</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Nascimento</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Cpf/Rg</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="gen-p">
-                    <input type="radio" id="none" name="gener"></input>
-                    <label for="radio">Feminino</label>
-                    <input type="radio" id="none" name="gener"></input>
-                    <label for="radio">Masculino</label>
-                    <input type="radio" id="none" name="gener"></input>
-                    <label for="radio">Outro</label>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Email</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Escolha a senha</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Celular com DDD</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <h5>Preencha abaixo com o seu endereço</h5>
-                <div className="dados mb-3">
-                    <label for="name">Cep</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Estado</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Cidade</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Bairro</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <div className="dados mb-3">
-                    <label for="name">Rua e N°</label>
-                    <input id="doc" type="text" name="nome" placeholder="Digite o Nome" required ></input>
-                </div>
-                <h5>Anexe sua Documentaçao para revisao:</h5>
-                <div id="final">
-                    <div class="input-group mb-3 container">
-                        <input type="file" class="form-control" id="inputGroupFile02"></input>
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                    </div>
-                    <a class="btnn btn-primary" href="login_i.html" role="button">Cadastrar</a>
-                </div>
-            </form>
-        </div>
-        <Footer/>
-</>
-    )
+            <Header />
+            <div class="container">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                </button>
+                <form class="cadastro container conteudo my-4 px-4">
+                    <h2>Cadastro Colaborador</h2>
+                    <div class="colaborador" id="cads">
+                        <div class="dados">
+                            <div class="inputs">
+                                <label for="name">Nome:</label><br>
+                                    <input id="doc" type="text" name="nome" placeholder="Digite seu Nome" required>
+                                    </div>
+                                    <div>
+                                        <label for="name">Sobrenome:</label><br>
+                                            <input id="doc" type="text" name="nome" placeholder="Digite seu Sobrenome" required>
+                                            </div>
+                                            <div class="inputs">
+                                                <label for="doc">Data de Nascimento:</label><br>
+                                                    <input id="doc" type="date" name="doc" placeholder="" required>
+                                                    </div>
+                                                    <div class="inputs">
+                                                        <label for="doc">CPF/CNPJ:</label><br>
+                                                            <input id="doc" type="text" name="doc" placeholder="Digite seu CPF ou CNPJ" required>
+
+                                                                <div class="gen-p">
+                                                                    <input type="radio" id="none" name="gener">
+                                                                        <label for="none">Pessoa Fisica</label>
+                                                                </div>
+                                                                <div class="gen-p">
+                                                                    <input type="radio" id="none" name="gener">
+                                                                        <label for="none">Pessoa Juridica</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputs">
+                                                                <label for="email">Email:</label><br>
+                                                                    <input id="doc" type="email" name="email" placeholder="Digite seu Email" required>
+                                                                    </div>
+                                                                    <div class="inputs">
+                                                                        <label for="password">Escolha a Senha:</label><br>
+                                                                            <input id="doc" type="password" name="Senha" placeholder="Digite a senha" required>
+                                                                            </div>
+                                                                            <div class="inputs">
+                                                                                <label for="number">Celular com o DDD:</label><br>
+                                                                                    <input id="doc" type="tel" name="number" placeholder="Digite seu Numero" required>
+                                                                                    </div>
+                                                                                    <div class="gen-imput">
+                                                                                        <input type="radio" id="none" name="gener">
+                                                                                            <label for="none">Feminino</label>
+                                                                                    </div>
+                                                                                    <div class="gen-imput">
+                                                                                        <input type="radio" id="none" name="gener">
+                                                                                            <label for="none">Masculino</label>
+                                                                                    </div>
+                                                                                    <div class="gen-imput">
+                                                                                        <input type="radio" id="none" name="gener">
+                                                                                            <label for="none">Prefiro não dizer</label>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="end">
+                                                                                <h4>Preencha abaixo com seu Endereço</h4>
+                                                                                <div class="inputs">
+                                                                                    <label for="end" class="form-label"> Estado:</label><br>
+                                                                                        <input type="text" id="doc" placeholder="Nome do seu Estado">
+                                                                                        </div>
+                                                                                        <div class="inputs">
+                                                                                            <label for="end" class="form-label">Cidade:</label><br>
+                                                                                                <input type="text" id="doc" placeholder="Nome da sua Cidade">
+                                                                                                </div>
+                                                                                                <div class="inputs">
+                                                                                                    <label for="Cep" class="form-label">Cep:</label><br>
+                                                                                                        <input type="text" id="doc" placeholder="Digite seu Cep">
+                                                                                                        </div>
+                                                                                                        <div class="inputs">
+                                                                                                            <label for="end" class="form-label">Rua:</label><br>
+                                                                                                                <input type="text" id="doc" placeholder="Nome da sua Rua">
+                                                                                                                </div>
+                                                                                                                <div class="inputs">
+                                                                                                                    <label for="end" class="form-label">Bairro:</label><br>
+                                                                                                                        <input type="text" id="doc" placeholder="Nome do seu Bairro">
+                                                                                                                        </div>
+                                                                                                                        <div class="inputs">
+                                                                                                                            <label for="end" class="form-label">Complemento:</label><br>
+                                                                                                                                <input type="text" id="doc" placeholder="Digite o Complemento">
+                                                                                                                                </div>
+                                                                                                                                <br>
+                                                                                                                                    <!--Termo-->
+                                                                                                                                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                                                                                                                        <label class="btn btn-outline-dark" for="btn-check-outlined" onclick={abrirModal}>Termos e
+                                                                                                                                            Condições</label>
+                                                                                                                                        <div id="modal-termo" class="modal-container  modal-dialog-centered modal-dialog-scrollable">
+                                                                                                                                            <div class="termo">
+                                                                                                                                                <button class="fechar">x</button>
+                                                                                                                                                <h5 class="subtitulo">Termos e Condições de uso para Colaboradores</h5>
+                                                                                                                                                <p class="te">
+                                                                                                                                                    Seja bem-vindo ao nosso site.<br>
+                                                                                                                                                        Leia com atenção todos os termos abaixo.<br>
+                                                                                                                                                            Este documento, e todo o conteúdo do site é oferecido por (PARA SEMEAR)<br>
+                                                                                                                                                                A permanência no website implica-se automaticamente na leitura e aceitação tácita do
+                                                                                                                                                                presente termos de uso a seguir.<br>
+
+
+                                                                                                                                                                    1. DA FUNÇÃO DO SITE<br>
+                                                                                                                                                                        Buscamos através da divulgaçao, desenvolvido por profissionais da área, fazer com que as
+                                                                                                                                                                        instituicoes sejam
+                                                                                                                                                                        conhecidas ao alcance de todos, e atraves disso possam receber mas recursos para apliar e
+                                                                                                                                                                        manter seus projetos.<br>
+                                                                                                                                                                            Nesta plataforma, poderá ser realizado tanto a divulgação das instituicoes, suas metas e
+                                                                                                                                                                            areas alcançadas.<br>
+                                                                                                                                                                                Todo o conteúdo presente neste site foi desenvolvido buscando fontes e materiais de
+                                                                                                                                                                                confiabilidade, assim como são baseados
+                                                                                                                                                                                em estudos sérios e respeitados, através de pesquisa de alta nível.<br>
+                                                                                                                                                                                    É de responsabilidade da Colaborador colocar todas as informações verdadeiras sobre a
+                                                                                                                                                                                    mesma.<br>
+
+                                                                                                                                                                                        2. DAS OBRIGAÇÕES DO COLABORADOR <br>
+                                                                                                                                                                                            Os colaboradores ao utilizar o website, concorda integralmente em:
+                                                                                                                                                                                            De nenhuma forma ou meio realizar qualquer tipo de ação que tente invadir, hacker, destruir
+                                                                                                                                                                                            ou prejudicar a estrutura do site,
+                                                                                                                                                                                            ou de seus parceiros. Incluindo-se, mas não se limitando, ao envio de vírus de computador,
+                                                                                                                                                                                            de ataques de DDOS, de acesso indevido
+                                                                                                                                                                                            por falhas da mesma ou quaisquer outras formas e meios.<br>
+                                                                                                                                                                                                Da proibição em reproduzir qualquer conteúdo de natureza indevida ou falsa, podendo
+                                                                                                                                                                                                responder civil e criminalmente pelo mesmo.
+                                                                                                                                                                                                Com a Política de Privacidade do site, assim como tratamos os dados referentes ao cadastro e
+                                                                                                                                                                                                visita no site, podendo a qualquer momento e forma,
+                                                                                                                                                                                                requerer a exclusão dos mesmos, através do formulário de contato.
+                                                                                                                                                                                                <br>
+                                                                                                                                                                                                    3. DO ACEITE DOS TERMOS<br>
+                                                                                                                                                                                                        Este termo especifica e exige que todo Colaborador ao acessar o site, leia e compreenda
+                                                                                                                                                                                                        todas as cláusulas do mesmo,
+                                                                                                                                                                                                        visto que ele estabelece entre o ParaSemear e o Colaborador direitos e obrigações entre
+                                                                                                                                                                                                        ambas as partes, aceitos expressamente
+                                                                                                                                                                                                        pelo colaborador para realizar o cadastro e permanecer no site.<br>
+                                                                                                                                                                                                            Ao continuar acessando o site, o Colaborador expressa que aceita e entende todas as
+                                                                                                                                                                                                            cláusulas, assim como concorda integralmente
+                                                                                                                                                                                                            com cada uma delas, sendo este aceite imprescindível para a permanência na mesma. Caso o
+                                                                                                                                                                                                            Colaborador discorde de alguma cláusula ou
+                                                                                                                                                                                                            termo deste contrato, o mesmo deve imediatamente interromper sua navegação de todas as
+                                                                                                                                                                                                            formas e meios.<br>
+                                                                                                                                                                                                                Este termo pode e irá ser atualizado periodicamente pelo ParaSemear, que se resguarda no
+                                                                                                                                                                                                                direito de alteração,
+                                                                                                                                                                                                                com aviso prévio e comunicação pelo o email informado no ato do cadastro. É importante que a
+                                                                                                                                                                                                                Colaborador confira
+                                                                                                                                                                                                                sempre se houve movimentação e qual foi a última atualização.<br><br>
+                                                                                                                                                                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                                                                                                                                                                                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Aceito os Termos e Condições de
+                                                                                                                                                                                                                            Uso</label>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                </div>
+
+
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                            <a class="btnn tx" href="login_c.html" role="button">Cadastrar</a>
+                                                                                                                                                                                                        </form>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                    <Footer />
+                                                                                                                                                                                                </>
+                                                                                                                                                                                                )
 
 }
