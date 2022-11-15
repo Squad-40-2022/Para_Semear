@@ -7,7 +7,7 @@ export default function instacom() {
     return (
 <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
             <form className="instac">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel001" aria-hidden="true">

@@ -6,7 +6,7 @@ export default function Projetos() {
     return (
         <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
             <form className="projet">
                 <div className='pro'>
                     <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"

@@ -9,7 +9,7 @@ export default function InstCol() {
     return (
         <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
         <div className="MinhInst">
             <form>
                 <h2> Minhas Instituições </h2>

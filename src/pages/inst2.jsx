@@ -9,7 +9,7 @@ export default function inst2() {
     return (
         <>
             <Header />
-            <div class="col-1 d-flex pb-2">
+            <div class="container">
                 <form className="inst2">
                     <div class="container">
                         <div class="row m-0 p-0">

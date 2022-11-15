@@ -6,7 +6,7 @@ export default function Doa() {
     return (
       <>
 <Header/>
-      <div class="col-1 d-flex pb-2">
+      <div class="container">
           <form className="doa">
             <div className="doacao">
               <main class="container conteudo my-4 p-4">
