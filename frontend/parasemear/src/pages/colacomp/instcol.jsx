@@ -6,6 +6,7 @@ import manha from '../IMG/imagens/educadoamanha.png';
 
 export default function InstCol() {
     return (
+        <div class="col-1 d-flex pb-2">
         <div className="MinhInst">
             <form>
                 <h2> Minhas Instituições </h2>
@@ -62,6 +63,7 @@ export default function InstCol() {
                     </div>
                 </section>
             </form>
+        </div>
         </div>
 
     )
