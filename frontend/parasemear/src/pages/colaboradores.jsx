@@ -6,10 +6,7 @@ import livros from '../IMG/imagens.colaboradores/livros.png';
 export default function Col() {
     return (
 
-        <div class="col-1 d-flex align-items-end pb-2">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
-            </button>
+        <div class="col-1 d-flex pb-2">
 
             <form className="Colab">
                 <div class="fw-bold">
