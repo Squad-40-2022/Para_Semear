@@ -3,10 +3,7 @@ import pdf from '../IMG/imagens.colaboradores/pdf-download-2617 (1).png';
 
 export default function Projetos() {
     return (
-        <div class="col-1 d-flex align-items-end pb-2">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
-            </button>
+        <div class="col-1 d-flex pb-2">
             <form className="projet">
                 <div className='pro'>
                     <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
