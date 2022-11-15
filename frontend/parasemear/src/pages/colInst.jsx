@@ -1,10 +1,10 @@
 import React from 'react'
-import user from '../IMG/user.png';
+import user from "../IMG/user.png";
 import social from '../IMG/imagens/social.png';
 import webp from '../IMG/imagens/transformar.webp';
 import sem from '../IMG/imagens/semente de esperança.jpg';
 
-export default function InstCol() {
+export default function ColInst() {
     return (
         <div class="col-1 d-flex  pb-2">
             <div className='instCol'>

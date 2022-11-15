@@ -1,6 +1,6 @@
 import React from 'react'
 import dinheiro from '../IMG/imagens.colaboradores/dinheiro.png';
-import celular from '../IMG/imagens.colaboradores/celular.png';
+import celular from '../IMG/imagens.colaboradores/celular.png.png'
 import livros from '../IMG/imagens.colaboradores/livros.png';
 
 export default function Col() {

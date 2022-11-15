@@ -1,10 +1,6 @@
 import React from 'react'
 
-<<<<<<< Updated upstream
-export default function LoginCol() {
-=======
-export default function Logincol() {
->>>>>>> Stashed changes
+export default function Logcol() {
     return (
 
         <div class="col-1 d-flex align-items-end pb-2">

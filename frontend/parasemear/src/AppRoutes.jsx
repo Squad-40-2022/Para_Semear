@@ -2,25 +2,24 @@ import React, {useContext} from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/auth';
 import { ADMAuthProvider, ADMAuthContext } from './context/ADMauth';
-import Pacotes from "./views/pacotes";
 import Home from "./pages/home";
 import Ajuda from "./pages/ajuda";
 import Checkout from "./pages/checkout";
 import Colaboradores from "./pages/colaboradores";
 import Inst2 from "./pages/inst2";
 import Instituicoes from "./pages/instituicoes";
-import Cadscol from "./pages/cadastros/cadscol";
-import Cadsinst from "./pages/cadastros/cadsinst";
-import Colacomp from "./pages/colacomp/colacomp";
-import Colinst from "./pages/colacomp/colInst";
-import ColRel from "./pages/colacomp/colRel";
-import Doacao from "./pages/colacomp/doaçao";
-import InstCol from "./pages/colacomp/instcol";
-import Dados from "./pages/instcom/dados";
-import InstAcomp from "./pages/instcom/instacomp";
-import Projetos from "./pages/instcom/projetos";
-import LogCol from "./pages/logins/logcol";
-import LoginInst from "./pages/logins/logininst";
+import Cadscol from "./pages/cadscol";
+import Cadsinst from "./pages/cadsinst";
+import Colacomp from "./pages/colacomp";
+import Colinst from "./pages/colInst";
+import ColRel from "./pages/colRel";
+import Doacao from "./pages/doaçao";
+import InstCol from "./pages/instcol";
+import Dados from "./pages/dados";
+import InstAcomp from "./pages/instacomp";
+import Projetos from "./pages/projetos";
+import LogCol from "./pages/logcol";
+import LoginInst from "./pages/logininst";
 
 const AppRoutes = () => {
 const PrivateADM = ({children}) => {
@@ -40,7 +39,6 @@ const PrivateADM = ({children}) => {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path='/' element={<Pacotes />} />
           <Route path='/home' element={<Home/>} />
           <Route path='/ajuda' element={<Ajuda />} />
           <Route path='/checkout' element={<Checkout />} />
@@ -64,14 +62,8 @@ const PrivateADM = ({children}) => {
 
       <ADMAuthProvider >
         <Routes>
-          <Route path='/adm' element={<LoginADM />} />
-          <Route path='/adm/cliente' element={<PrivateADM><ClienteADM /></PrivateADM>} />
-          <Route path='/adm/aeroporto' element={<PrivateADM><AeroportoADM /></PrivateADM>} />
-          <Route path='/adm/companhia' element={<PrivateADM><CompanhiaADM /></PrivateADM>} />
-          <Route path='/adm/pacote' element={<PrivateADM><PacoteADM /></PrivateADM>} />
-          <Route path='/adm/reserva' element={<PrivateADM><ReservaADM /></PrivateADM>} />
-          <Route path='/adm/hospedagem' element={<PrivateADM><HospedagemADM /></PrivateADM>} />
-          <Route path='/adm/voo' element={<PrivateADM><VooADM /></PrivateADM>} />
+          <Route path='/pages' element={<LoginInst />} />
+          <Route path='/pages' element={<PrivateADM><LogCol /></PrivateADM>} />
         </Routes>
       </ADMAuthProvider>
     </Router >
