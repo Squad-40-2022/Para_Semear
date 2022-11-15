@@ -39,7 +39,7 @@ const PrivateADM = ({children}) => {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path='/home' element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/ajuda' element={<Ajuda />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/colaboradores' element={<Colaboradores />} />
