@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from '../components/estrutura/header'
 
 export default function cadscol() {
     return (
-
-        <div class="col-1 d-flex align-items-end pb-2">
+<>
+<Header/>
+        <div class="container">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="../IMG/Icon-login.png" alt="" />
             </button>
@@ -72,7 +74,7 @@ export default function cadscol() {
                 </div>
             </form>
         </div>
-
+</>
     )
 
 }

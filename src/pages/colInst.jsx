@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/estrutura/header';
 import user from "../IMG/user.png";
 import social from '../IMG/imagens/social.png';
 import webp from '../IMG/imagens/transformar.webp';
@@ -6,6 +7,8 @@ import sem from '../IMG/imagens/semente de esperança.jpg';
 
 export default function ColInst() {
     return (
+        <>
+<Header/>
         <div class="col-1 d-flex  pb-2">
             <div className='instCol'>
                 <main class="container conteudo my-4 p-4">
@@ -145,7 +148,7 @@ export default function ColInst() {
 
             </div>
         </div>
-
+</>
     )
 
 }

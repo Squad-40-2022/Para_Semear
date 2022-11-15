@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from '../components/estrutura/header'
 
 export default function Dados() {
     return (
+        <>
+<Header/>
         <div class="col-1 pb-2">
             <form className="Dados">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -242,7 +245,7 @@ export default function Dados() {
                 </div>
             </form>
         </div>
-
+</>
     )
 
 }

@@ -1,11 +1,13 @@
 import React from 'react'
+import Header from '../components/estrutura/header';
 import dinheiro from '../IMG/imagens.colaboradores/dinheiro.png';
 import celular from '../IMG/imagens.colaboradores/celular.png.png'
 import livros from '../IMG/imagens.colaboradores/livros.png';
 
 export default function Col() {
     return (
-
+<>
+<Header/>
         <div class="col-1 d-flex pb-2">
             <form className="Colab">
                 <div class="fw-bold">
@@ -104,7 +106,7 @@ export default function Col() {
             </form>
 
         </div>
-
+</>
     )
 
 }

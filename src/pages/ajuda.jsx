@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from '../components/estrutura/header'
 
 export default function Ajuda() {
     return (
-
-        <div class="col-1 d-flex pb-2">
+      <>
+<Header/>
+        <div class="container">
             <form className="ajuda">
             <div className="aju">
               <h3>Como Podemos lhe Ajudar?</h3>
@@ -36,7 +38,7 @@ export default function Ajuda() {
             </div>
           </form>
         </div>
-
+</>
     )
 
 }

@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../components/estrutura/header'
 
 export default function Checkout() {
     return (
-
+<>
+<Header/>
         <div class="col-1 d-flex pb-2">
             <div className="Checkout">
           <form className="chec">
@@ -68,7 +70,7 @@ export default function Checkout() {
           </form>
         </div>
         </div>
-
+</>
     )
 
 }

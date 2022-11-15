@@ -10,8 +10,8 @@ export default function Footer() {
                 <ul class="nav flex-column">
                     <li>Av. Borges de Medeiros, 159<br>Porto Alegre/RS</br></li>
                     <li>(51)3456-5555</li>
-                    <li class="nav-item"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=550000000000" class="nav-link p-0 text-white">Entre em
-                            contato</a>
+                    <li class="nav-item"><div href="#" class="nav-link p-0 text-white">Entre em
+                            contato</div>
                     </li>
                 </ul>
             </div>

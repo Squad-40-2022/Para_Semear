@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from '../components/estrutura/header';
 import user from '../IMG/user.png';
 import user30 from '../IMG/user-30px.png';
 
 export default function ColAcom() {
     return (
+<>
+<Header/>
         <div class="col-1 d-flex pb-2">
             <div className="AcompCol">
                 <div className='acomp'>
@@ -195,7 +198,6 @@ export default function ColAcom() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div></>
     )
-
 }
