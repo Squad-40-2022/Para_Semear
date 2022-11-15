@@ -4,9 +4,6 @@ export default function Checkout() {
     return (
 
         <div class="col-1 d-flex pb-2">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
-            </button>
             <div className="Checkout">
           <form className="chec">
             <div class="card">
