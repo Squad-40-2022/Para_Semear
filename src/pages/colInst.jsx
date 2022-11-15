@@ -9,7 +9,7 @@ export default function ColInst() {
     return (
         <>
 <Header/>
-        <div class="col-1 d-flex  pb-2">
+        <div class="container">
             <div className='instCol'>
                 <main class="container conteudo my-4 p-4">
                     <div class="border-bottom">

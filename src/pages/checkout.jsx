@@ -5,7 +5,7 @@ export default function Checkout() {
     return (
 <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
             <div className="Checkout">
           <form className="chec">
             <div class="card">

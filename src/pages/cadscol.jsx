@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Header from '../components/estrutura/header'
 
 export default function cadscol() {
@@ -7,7 +8,7 @@ export default function cadscol() {
 <Header/>
         <div class="container">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="../IMG/Icon-login.png" alt="" />
+          
             </button>
             <form className="CadCol">
                 <h2>Cadastro do Colaborador </h2>

@@ -8,7 +8,7 @@ export default function Col() {
     return (
 <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
             <form className="Colab">
                 <div class="fw-bold">
                     <h1 className="h1"> Boa semente, só pode dar bom fruto! </h1>

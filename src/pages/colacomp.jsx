@@ -7,7 +7,7 @@ export default function ColAcom() {
     return (
 <>
 <Header/>
-        <div class="col-1 d-flex pb-2">
+        <div class="container">
             <div className="AcompCol">
                 <div className='acomp'>
                     <main class="container conteudo my-4 p-4">

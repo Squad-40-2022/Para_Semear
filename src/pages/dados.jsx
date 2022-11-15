@@ -5,7 +5,7 @@ export default function Dados() {
     return (
         <>
 <Header/>
-        <div class="col-1 pb-2">
+        <div class="container">
             <form className="Dados">
                 <div class="modal modal-dialog-scrollable" id="staticBackdrop001" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel001" aria-hidden="true">
