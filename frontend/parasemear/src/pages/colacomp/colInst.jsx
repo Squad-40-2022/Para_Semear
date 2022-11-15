@@ -6,143 +6,144 @@ import sem from '../IMG/imagens/semente de esperança.jpg';
 
 export default function InstCol() {
     return (
-
-        <div className='instCol'>
-            <main class="container conteudo my-4 p-4">
-                <div class="border-bottom">
-                    <div class="front">
-                        <img src={user} className="Ong-logo" alt="ong" />
-                    </div>
-                    <h2>Maria Silva</h2>
-                </div>
-
-            </main>
-            <div class="container">
-                <div class="mb-4 row justify-content-between">
-                    <aside class="col-3 conteudo">
-                        <div class="row px-5">
-                            <button class="btn bt-menu mt-5"><a href="../colab_acom.html"
-                                class="tx">Publicações</a></button>
-                            <button class="btn bt-menu"><a href="doacao.html" class="tx">Nova
-                                doação</a></button>
-                            <button class="btn bt-menu"><a href="colab_inst.html" class="tx">Minhas
-                                instituições</a></button>
-                            <button class="btn bt-menu"><a href="colab_rel.html" class="tx">Relatório 2021
-                                disponível</a></button>
-                            <button class="btn bt-menu"><a href="colab_conf.html" class="tx">Configurações
-                                e privacidade</a></button>
+        <div class="col-1 d-flex  pb-2">
+            <div className='instCol'>
+                <main class="container conteudo my-4 p-4">
+                    <div class="border-bottom">
+                        <div class="front">
+                            <img src={user} className="Ong-logo" alt="ong" />
                         </div>
-                    </aside>
-                    <section class="col-xl-8 col-12 conteudo cont-fixed p-5 ">
-                        <h2> Minhas Instituições </h2>
-                        <div class=" container overflow-scroll">
-                            <div>
+                        <h2>Maria Silva</h2>
+                    </div>
+
+                </main>
+                <div class="container">
+                    <div class="mb-4 row justify-content-between">
+                        <aside class="col-3 conteudo">
+                            <div class="row px-5">
+                                <button class="btn bt-menu mt-5"><a href="../colab_acom.html"
+                                    class="tx">Publicações</a></button>
+                                <button class="btn bt-menu"><a href="doacao.html" class="tx">Nova
+                                    doação</a></button>
+                                <button class="btn bt-menu"><a href="colab_inst.html" class="tx">Minhas
+                                    instituições</a></button>
+                                <button class="btn bt-menu"><a href="colab_rel.html" class="tx">Relatório 2021
+                                    disponível</a></button>
+                                <button class="btn bt-menu"><a href="colab_conf.html" class="tx">Configurações
+                                    e privacidade</a></button>
+                            </div>
+                        </aside>
+                        <section class="col-xl-8 col-12 conteudo cont-fixed p-5 ">
+                            <h2> Minhas Instituições </h2>
+                            <div class=" container overflow-scroll">
                                 <div>
                                     <div>
-                                        <p class="destaque"> Veja as as instituições que transforma vidas através da sua
-                                            contribuição
-                                        </p>
+                                        <div>
+                                            <p class="destaque"> Veja as as instituições que transforma vidas através da sua
+                                                contribuição
+                                            </p>
+                                            <div class="card mb-3">
+                                                <div class="front">
+                                                    <img src={social} className="Ong-logo" alt="ong" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title"> Instituto Ler a Esperamça</h5>
+                                                    <p> Contribuição: <b>SUA ULTIMA CONTRIBUIÇÃO FOI 12/01/2022</b></p>
+                                                    <p class="card-text">o instituto ler a esperança apoia escolas em zonas
+                                                        rurais
+                                                        no
+                                                        estadao Maranhao, sao atendidos em torno de 1200 pessoas a missao
+                                                        This
+                                                        is a
+                                                        wider card with supporting text below as a natural lead-in to
+                                                        additional
+                                                        content. This content is a little bit longer.
+                                                    </p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">Contato: (51)
+                                                            00000-0000
+                                                        </small>
+                                                    </p>
+                                                    <button class="btn bt-ins">Contribuir agora </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-3">
                                             <div class="front">
                                                 <img src={social} className="Ong-logo" alt="ong" />
                                             </div>
                                             <div class="card-body">
-                                                <h5 class="card-title"> Instituto Ler a Esperamça</h5>
+                                                <h5 class="card-title"> Fundação Transformar</h5>
                                                 <p> Contribuição: <b>SUA ULTIMA CONTRIBUIÇÃO FOI 12/01/2022</b></p>
-                                                <p class="card-text">o instituto ler a esperança apoia escolas em zonas
+                                                <p class="card-text"><h2> fundaçao Transforma </h2> apoia escolas em zonas
                                                     rurais
                                                     no
-                                                    estadao Maranhao, sao atendidos em torno de 1200 pessoas a missao
-                                                    This
+                                                    estadao Maranhao, sao atendidos em torno de 1200 pessoas a missao This
                                                     is a
-                                                    wider card with supporting text below as a natural lead-in to
-                                                    additional
-                                                    content. This content is a little bit longer.
+                                                    wider
+                                                    card with supporting text below as a natural lead-in to additional
+                                                    content.
+                                                    This
+                                                    content is a little bit longer.</p>
+                                                <p class="card-text"><small class="text-muted">Contato: (51)
+                                                    00000-0000</small>
                                                 </p>
-                                                <p class="card-text">
-                                                    <small class="text-muted">Contato: (51)
-                                                        00000-0000
-                                                    </small>
-                                                </p>
-                                                <button class="btn bt-ins">Contribuir agora </button>
+                                                <button class="btn bt-ins"> Contribuir agora </button>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="card mb-3">
                                         <div class="front">
-                                            <img src={social} className="Ong-logo" alt="ong" />
+                                            <img src={webp} className="Ong-logo" alt="ong" />
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"> Fundação Transformar</h5>
+                                            <h5 class="card-title"> Instituto Transformar</h5>
                                             <p> Contribuição: <b>SUA ULTIMA CONTRIBUIÇÃO FOI 12/01/2022</b></p>
-                                            <p class="card-text"><h2> fundaçao Transforma </h2> apoia escolas em zonas
-                                                rurais
+                                            <p class="card-text">o instituto ler a esperança apoia escolas em zonas rurais
                                                 no
-                                                estadao Maranhao, sao atendidos em torno de 1200 pessoas a missao This
+                                                estadao
+                                                Maranhao, sao atendidos em torno de 1200 pessoas a missao This is a wider
+                                                card
+                                                with
+                                                supporting text below as a natural lead-in to additional content. This
+                                                content
                                                 is a
-                                                wider
-                                                card with supporting text below as a natural lead-in to additional
-                                                content.
-                                                This
-                                                content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Contato: (51)
-                                                00000-0000</small>
+                                                little
+                                                bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Contato: (51) 00000-0000</small>
                                             </p>
                                             <button class="btn bt-ins"> Contribuir agora </button>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="card mb-3">
                                     <div class="front">
-                                        <img src={webp} className="Ong-logo" alt="ong" />
+                                        <img src={sem} className="Ong-logo" alt="ong" />
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title"> Instituto Transformar</h5>
+                                        <h5 class="card-title"> Associção Educadores do Amanhã</h5>
                                         <p> Contribuição: <b>SUA ULTIMA CONTRIBUIÇÃO FOI 12/01/2022</b></p>
-                                        <p class="card-text">o instituto ler a esperança apoia escolas em zonas rurais
-                                            no
+                                        <p class="card-text">o instituto ler a esperança apoia escolas em zonas rurais no
                                             estadao
-                                            Maranhao, sao atendidos em torno de 1200 pessoas a missao This is a wider
-                                            card
-                                            with
-                                            supporting text below as a natural lead-in to additional content. This
-                                            content
-                                            is a
-                                            little
-                                            bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Contato: (51) 00000-0000</small>
+                                            Maranhao,
+                                            sao atendidos em torno de 1200 pessoas a missao This is a wider card with
+                                            supporting
+                                            text
+                                            below
+                                            as a natural lead-in to additional content. This content is a little bit longer.
                                         </p>
+                                        <p class="card-text"><small class="text-muted">Contato: (51) 00000-0000</small></p>
                                         <button class="btn bt-ins"> Contribuir agora </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card mb-3">
-                                <div class="front">
-                                    <img src={sem} className="Ong-logo" alt="ong" />
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title"> Associção Educadores do Amanhã</h5>
-                                    <p> Contribuição: <b>SUA ULTIMA CONTRIBUIÇÃO FOI 12/01/2022</b></p>
-                                    <p class="card-text">o instituto ler a esperança apoia escolas em zonas rurais no
-                                        estadao
-                                        Maranhao,
-                                        sao atendidos em torno de 1200 pessoas a missao This is a wider card with
-                                        supporting
-                                        text
-                                        below
-                                        as a natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <p class="card-text"><small class="text-muted">Contato: (51) 00000-0000</small></p>
-                                    <button class="btn bt-ins"> Contribuir agora </button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
 
     )
