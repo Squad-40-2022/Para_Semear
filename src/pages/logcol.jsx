@@ -32,21 +32,21 @@ export default function Logcol() {
                                 <input type="password" class="form-control" id="exampleInputPassword1"
                                     placeholder="digite sua senha ..." required></input>
                             </div>
-                            <a href="ajuda.html" class="tx btn">Esqueci minha senha</a>
+                            <a href="./ajuda" class="tx btn">Esqueci minha senha</a>
                            <div class="my-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                                 <label class="form-check-label" for="exampleCheck1" >Manter conectado</label>
                             </div>
                             <div class="text-center mb-5">
-                                <a href="colab_acom.html" type="submit" class="tx btn btn-entrar">Conectar</a>
+                                <a href="./colacomp" type="submit" class="tx btn btn-entrar">Conectar</a>
                             </div>
                             <div class="text-center">
                                 <h3 class="mb-2">Se Cadastrar</h3>
-                                <a href="DoadoresCadastro.html" class="tx btn">Como Colaborador </a>
-                                <a href="InstituiCadastro.html" class="tx btn">Como Instituição </a>
+                                <a href="./cadscol" class="tx btn">Como Colaborador </a>
+                                <a href="./cadsinst" class="tx btn">Como Instituição </a>
                             </div>
                         </form>
-                        <small class="mt-4 mb-3"><a href="login_i.html" class="tx">Sou uma instituição</a></small>
+                        <small class="mt-4 mb-3"><a href="./loginsinst" class="tx">Sou uma instituição</a></small>
                     </div>
                 </div>
             </div>
