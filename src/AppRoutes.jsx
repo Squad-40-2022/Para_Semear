@@ -15,9 +15,7 @@ import Colinst from "./pages/colInst";
 import ColRel from "./pages/colRel";
 import Doacao from "./pages/doaçao";
 import InstCol from "./pages/instcol";
-import Dados from "./pages/dados";
 import InstAcomp from "./pages/instacomp";
-import Projetos from "./pages/projetos";
 import LogCol from "./pages/logcol";
 import LoginInst from "./pages/logininst";
 
@@ -52,9 +50,7 @@ const PrivateADM = ({children}) => {
           <Route path='/colRel' element={<ColRel />} />
           <Route path='/doaçao' element={<Doacao />} />
           <Route path='/instcol' element={<InstCol />} />
-          <Route path='/dados' element={<Dados/>} />
           <Route path='/instacomp' element={<InstAcomp />} />
-          <Route path='/projetos' element={<Projetos />} />
           <Route path='/logcol' element={<LogCol />} />
           <Route path='/logininst' element={<LoginInst />} />
         </Routes>
