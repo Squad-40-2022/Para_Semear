@@ -3,19 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 import Footer from '../components/estrutura/footer'
 import Header from '../components/estrutura/header'
+import '../CSS/DoadoresCadastro.css'
 
 const Cadscol = () => {
-    function abrirModal() {
-        const modal = document.getElementById("modal-termo")
-        modal.classList.add("mostrar")
-
-        modal.addEventListener("click", (e) => {
-            if (e.target.id == "modal-termo" || e.target.className == "fechar") {
-                modal.classList.remove("mostrar");
-            }
-        });
-    }
-   
+       
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [nome, setNome] = useState("")
@@ -149,11 +140,11 @@ const Cadscol = () => {
                             <br />
                             {/*<!--Termo-->*/}
                             <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off" />
-                            <label class="btn btn-outline-dark" for="btn-check-outlined" onclick={abrirModal}>Termos e
-                                Condições</label>
+                            <h3 class="dark" for="btn-check-outlined" >Termos e
+                                Condições</h3>
                             <div id="modal-termo" class="modal-container  modal-dialog-centered modal-dialog-scrollable">
                                 <div class="termo">
-                                    <button class="fechar">x</button>
+                                    
                                     <h5 class="subtitulo">Termos e Condições de uso para Colaboradores</h5>
                                     <p class="te">
                                         Seja bem-vindo ao nosso site.<br />
@@ -215,7 +206,7 @@ const Cadscol = () => {
 
                         </div>
                     </div>
-                    <a class="btnn tx" href="login_c.html" role="button">Cadastrar</a>
+                    <a class="btnn tx" href="./logcol" role="button">Cadastrar</a>
                 </form>
             </div>
             <Footer />
