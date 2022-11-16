@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/estrutura/header'
+import Footer from '../componentss/estruturas/footer'
 
 export default function cadsinst() {
     return (
