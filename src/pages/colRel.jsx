@@ -9,12 +9,13 @@ export default function ColRel() {
 <>
 <Header/>
         <div className='relat'>
-            <main class="container conteudo my-4 p-4">
+            <main class="container conteudo my-5 p-5">
                 <div class="border-bottom">
+                    <h2>Maria Silva</h2>
                     <div class="front">
                         <img src={user} className="Ong-logo" alt="ong" />
                     </div>
-                    <h2>Maria Silva</h2>
+                    
                 </div>
 
             </main>
@@ -22,13 +23,11 @@ export default function ColRel() {
                 <div class="mb-4 row justify-content-between">
                     <aside class="col-3 conteudo">
                         <div class="row px-5">
-                            <button class="btn bt-menu mt-5"><a href="../colab_acom.html" class="tx">Publicações</a></button>
-                            <button class="btn bt-menu"><a href="doacao.html" class="tx">Nova
+                            <button class="btn bt-menu mt-5"><a href="../colab_acom.html" class="tx">Relatorio</a></button>
+                            <button class="btn bt-menu"><a href="./doacao" class="tx">Nova
                                 doação</a></button>
-                            <button class="btn bt-menu"><a href="colab_inst.html" class="tx">Minhas
+                            <button class="btn bt-menu"><a href="./colinst" class="tx">Minhas
                                 instituições</a></button>
-                            <button class="btn bt-menu"><a href="colab_rel.html"
-                                class="tx">Relatório 2021 disponível</a></button>
                             <button class="btn bt-menu"><a href="colab_conf.html" class="tx">Configurações
                                 e privacidade</a></button>
                         </div>
