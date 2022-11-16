@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/estrutura/header';
+import Footer from '../components/estrutura/footer'
 import ACEMT from '../IMG/imagens.colaboradores/ACEMT LOGO.png';
 import User from '../IMG/user.png'
 
@@ -76,6 +77,7 @@ export default function Instituicoes() {
           </div>
         </section>
       </div>
+      <Footer/>
     </>
   )
 
