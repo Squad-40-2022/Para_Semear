@@ -46,7 +46,7 @@ export default function Logcol() {
                                     <a href="./cadsinst" class="tx btn">Como Instituição </a>
                                 </div>
                             </form>
-                            <small class="mt-4 mb-3"><a href="./loginsinst" class="tx">Sou uma instituição</a></small>
+                            <small class="mt-4 mb-3"><a href="./logininst" class="tx">Sou uma instituição</a></small>
                         </div>
                     </div>
                 </div>
