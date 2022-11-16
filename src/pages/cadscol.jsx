@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
-import React from 'react'
 import Footer from '../components/estrutura/footer'
 import Header from '../components/estrutura/header'
 
-export default function cadscol() {
+const Cadscol = () => {
     function abrirModal() {
         const modal = document.getElementById("modal-termo")
         modal.classList.add("mostrar")
@@ -16,32 +15,34 @@ export default function cadscol() {
             }
         });
     }
-    function Entrou() {
-        var x = document.getElementsByClassName("entre");
-        x[0].innerHTML = "Bem Vindo de Volta!"
-    }
-
+   
     const navigate = useNavigate()
     const [email, setEmail] = useState("")
     const [nome, setNome] = useState("")
+    const [sNome, setSNome] = useState("")
+    const [data, setData] = useState("")
     const [cpf, setCpf] = useState("")
     const [tel, setTel] = useState("")
     const [senha, setSenha] = useState("")
     const [logradouro, setLogradouro] = useState("")
     const [cidade, setCidade] = useState("")
-    const [nasc, setNasc] = useState("")
+    const [uf, setUf] = useState("")
+    const [sex, setSex] = useState("")
 
 
     const user = {
         id: 0,
         cpf: cpf,
         nome: nome,
+        sNome: sNome,
+        data:data,
         tel: tel,
+        sex:sex,
         senha: senha,
         email: email,
         logradouro: logradouro,
         cidade: cidade,
-        nasc: nasc
+        uf:uf
     }
     const submit = async (e) => {
         e.preventDefault()
@@ -70,7 +71,6 @@ export default function cadscol() {
             console.log(error)
         }
     }
-
     return (
         <>
             <Header />
@@ -78,7 +78,7 @@ export default function cadscol() {
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                 </button>
-                <form class="cadastro container conteudo my-4 px-4" action='post'>
+                <form class="cadastro container conteudo my-4 px-4" action="form" onSubmit={submit}>
                     <h2>Cadastro Colaborador</h2>
                     <div class="colaborador" id="cads">
                         <div class="dados">
@@ -88,15 +88,15 @@ export default function cadscol() {
                             </div>
                             <div>
                                 <label for="name">Sobrenome:</label><br />
-                                <input id="doc" type="text" name="nome" placeholder="Digite seu Sobrenome" required />
+                                <input id="doc" type="text" name="nome" placeholder="Digite seu Sobrenome" onChange={(e) => setSNome(e.target.value)} required />
                             </div>
                             <div class="inputs">
                                 <label for="doc">Data de Nascimento:</label><br />
-                                <input id="doc" type="date" name="doc" placeholder="" required onChange={(e) => setNome(e.target.value)} />
+                                <input id="doc" type="date" name="doc" placeholder="" required onChange={(e) => setData(e.target.value)} />
                             </div>
                             <div class="inputs">
                                 <label for="doc">CPF/CNPJ:</label><br />
-                                <input id="doc" type="text" name="doc" placeholder="Digite seu CPF ou CNPJ" required />
+                                <input id="doc" type="text" name="doc" placeholder="Digite seu CPF ou CNPJ" onChange={(e) => setCpf(e.target.value)} required />
 
                                 <div class="gen-p">
                                     <input type="radio" id="none" name="gener" />
@@ -109,54 +109,42 @@ export default function cadscol() {
                             </div>
                             <div class="inputs">
                                 <label for="email">Email:</label><br />
-                                <input id="doc" type="email" name="email" placeholder="Digite seu Email" required />
+                                <input id="doc" type="email" name="email" placeholder="Digite seu Email" onChange={(e) => setEmail(e.target.value)} required />
                             </div>
                             <div class="inputs">
                                 <label for="password">Escolha a Senha:</label><br />
-                                <input id="doc" type="password" name="Senha" placeholder="Digite a senha" required />
+                                <input id="doc" type="password" name="Senha" placeholder="Digite a senha" onChange={(e) => setSenha(e.target.value)} required />
                             </div>
                             <div class="inputs">
                                 <label for="number">Celular com o DDD:</label><br />
-                                <input id="doc" type="tel" name="number" placeholder="Digite seu Numero" required />
+                                <input id="doc" type="tel" name="number" placeholder="Digite seu Numero" onChange={(e) => setTel(e.target.value)} required />
                             </div>
                             <div class="gen-imput">
-                                <input type="radio" id="none" name="gener" />
+                                <input type="radio" id="none" name="gener" onChange={(e) => setSex(e.target.value)} />
                                 <label for="none">Feminino</label>
                             </div>
                             <div class="gen-imput">
-                                <input type="radio" id="none" name="gener" />
+                                <input type="radio" id="none" name="gener"onChange={(e) => setSex(e.target.value)} />
                                 <label for="none">Masculino</label>
                             </div>
                             <div class="gen-imput">
-                                <input type="radio" id="none" name="gener" />
+                                <input type="radio" id="none" name="gener" onChange={(e) => setSex(e.target.value)}/>
                                 <label for="none">Prefiro não dizer</label>
                             </div>
                         </div>
                         <div class="end">
                             <h4>Preencha abaixo com seu Endereço</h4>
                             <div class="inputs">
-                                <label for="end" class="form-label"> Estado:</label><br />
-                                <input type="text" id="doc" placeholder="Nome do seu Estado" />
+                                <label for="end" class="form-label"> Logradouro:</label><br />
+                                <input type="text" id="doc" placeholder="Endereço,n,bairro" onChange={(e) => setLogradouro(e.target.value)} />
                             </div>
                             <div class="inputs">
                                 <label for="end" class="form-label">Cidade:</label><br />
-                                <input type="text" id="doc" placeholder="Nome da sua Cidade" />
+                                <input type="text" id="doc" placeholder="Nome da sua Cidade" onChange={(e) => setCidade(e.target.value)}  />
                             </div>
                             <div class="inputs">
-                                <label for="Cep" class="form-label">Cep:</label><br />
-                                <input type="text" id="doc" placeholder="Digite seu Cep" />
-                            </div>
-                            <div class="inputs">
-                                <label for="end" class="form-label">Rua:</label><br />
-                                <input type="text" id="doc" placeholder="Nome da sua Rua" />
-                            </div>
-                            <div class="inputs">
-                                <label for="end" class="form-label">Bairro:</label><br />
-                                <input type="text" id="doc" placeholder="Nome do seu Bairro" />
-                            </div>
-                            <div class="inputs">
-                                <label for="end" class="form-label">Complemento:</label><br />
-                                <input type="text" id="doc" placeholder="Digite o Complemento" />
+                                <label for="Cep" class="form-label">UF:</label><br />
+                                <input type="text" id="doc" placeholder="Digite seu Cep" onChange={(e) => setUf(e.target.value)}  />
                             </div>
                             <br />
                             {/*<!--Termo-->*/}
@@ -235,3 +223,4 @@ export default function cadscol() {
     )
 
 }
+export default Cadscol;
