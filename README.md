@@ -67,7 +67,7 @@ As atividades foram distribuidas de acordo com tempo disponivel, de cada membro 
 ## Marcação
 - `HTML5 & CSS3`
 
-##frameworks/bibliotecas
+## frameworks/bibliotecas
 - `React JS`
 - `Spring versão 16`
 
